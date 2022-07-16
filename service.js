@@ -43,6 +43,9 @@ app.post('/store-goal', (req, res) => {
   res.redirect('/');
 });
 
+app.get("/home",(req,res)=>{
+	res.send("project has been successfully")
+})
 app.listen(8000,() => {
 console.log("hello");
 });
